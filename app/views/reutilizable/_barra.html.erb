@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Transporte</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <%= link_to "Inicio", pages_index_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Info", pages_info_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Fotos", pages_photos_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Destinos", pages_video_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <select id="language-selector" class="nav-link">
+              <option value="es">Español</option>
+              <option value="en">Inglés</option>
+              <option value="de">Alemán</option>
+              <option value="sc">Escocés</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

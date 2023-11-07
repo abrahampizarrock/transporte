@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  background-image: url('/assets/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Agbalumo', sans-serif;
+}
+
+h1 {
+   font-family: 'Agbalumo', sans-serif;
+}
+ 
+p {
+   font-family: 'Agbalumo', sans-serif;
+}
+ 
+
+.inicio {
+  position: relative; /* Asegura que el contenedor .inicio sea un contexto de posición para los elementos internos. */
+}
+
+.tituloindex {
+  position: absolute; /* Posición absoluta con respecto al contenedor .inicio. */
+  top: 50%; /* Alinea desde la parte superior al 50% del contenedor .inicio. */
+  left: 50%; /* Alinea desde la izquierda al 50% del contenedor .inicio. */
+  transform: translate(-50%, -50%); /* Centra el contenido en el medio. */
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente blanco. */
+  padding: 20px; /* Espacio alrededor del texto. */
+  max-width: 300px; /* Ancho máximo del contenedor. Ajusta según tus necesidades. */
+}
+
+.tituloindex h1, .tituloindex p {
+  margin: 0; /* Elimina el espacio de margen predeterminado. */
+}
+
+
+ .titulofoto{
+    margin-left: 450px;
+ }
+
+ .navbar {
+    background-color: transparent; 
+    font-family: 'Agbalumo', sans-serif;
+}
+
+.img-responsive {
+   width: 100%;
+   height: auto;
+}
+
+.parrafo{
+   color: black;
+   font-family: 'Agbalumo', sans-serif;
+}
+
+.finalparrafo {
+   margin-left: 350px;
+}
+
+
+footer {
+   background-color: black;
+   color: white;
+   z-index: 1;
+   font-family: 'Agbalumo', sans-serif;
+ }
