@@ -15,7 +15,7 @@
  */
 
 body {
-  background-image: url('/assets/fondo.jpg');
+  background-image: url('/assets/palafitos2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Agbalumo', sans-serif;
@@ -54,7 +54,7 @@ p {
  }
 
  .navbar {
-    background-color: transparent; 
+    background-color: white; 
     font-family: 'Agbalumo', sans-serif;
 }
 
@@ -63,15 +63,30 @@ p {
    height: auto;
 }
 
+.infor {
+   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.tituloinfo {
+   margin-left: 200px;
+}
 .parrafo{
    color: black;
    font-family: 'Agbalumo', sans-serif;
+   margin-left: 30px;
 }
 
 .finalparrafo {
    margin-left: 350px;
 }
 
+.titulocard {
+   margin-left: 400px;
+}
+
+.custom-card {
+   margin-right: 70px;
+ }
 
 footer {
    background-color: black;
