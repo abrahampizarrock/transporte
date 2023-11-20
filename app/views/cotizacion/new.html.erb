@@ -1,0 +1,35 @@
+<div class="formulariopage">
+    <%= image_tag "palafitos3", class:"imagen-fondo" %>
+    <div class="texto-sobre-imagen">
+        <h1>Formulario de Cotización</h1>
+        <div class="formulario">
+            <%= form_with(model: @cotizacion, url: cotizacion_new_path, local: true) do |form| %>
+            <%= form.label :nombre, class:"texto-blanco" %>
+            <%= form.text_field :nombre, class:"btn btn-primary", required: true %><br><br>
+
+            <%= form.label :correo, class:"texto-blanco" %>
+            <%= form.email_field :correo, class:"btn btn-primary", required: true %><br><br>
+
+            <%= form.label :ciudad, class:"texto-blanco" %>
+            <%= form.text_field :ciudad, class:"btn btn-primary", required: true %><br><br>
+
+            <%= form.label :telefono, class:"texto-blanco" %>
+            <%= form.telephone_field :telefono, class:"btn btn-primary", required: true %><br><br>
+
+            <%= form.label :lugar_inicio, class:"texto-blanco" %>
+            <%= form.text_field :lugar, class:"btn btn-primary", required: true %><br><br>
+
+            <%= form.label :lugar_destino, class:"texto-blanco" %>
+            <%= form.text_field :lugar, class:"btn btn-primary", required: true %><br><br>
+
+            <%= form.label :fecha, class:"texto-blanco" %>
+            <%= form.date_field :fecha, class:"btn btn-primary" %><br><br>
+
+            <%= form.label :cantidad_personas, class:"texto-blanco" %>
+            <%= form.number_field :cantidad_personas, class:"btn btn-primary", required: true, min: 1 %><br><br>
+
+            <%= form.submit 'Enviar Cotización', class:"btn btn-primary" %>
+            <% end %>
+        </div>
+    </div>
+</div>
